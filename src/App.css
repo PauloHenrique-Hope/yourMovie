@@ -131,7 +131,8 @@ body{
 
 .watchedList{
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
   padding: 23px;
 }
 
@@ -188,7 +189,7 @@ body{
   padding: 20px;
   border-radius: 20px;
   align-items: center;
-  gap: 10px;
+  gap: 15px;
 }
 
 .movieDetails img{
@@ -221,12 +222,33 @@ body{
   color: #495057;
 }
 
-.starRating{
+.starIconEmpty{
+  fill: #495057;
+}
+
+.starIconFull{
+  fill: #ffd43b;
+}
+
+.addBtn{
+  border: none;
+  font-size: 16px;
+  padding: 5px 25px;
+  cursor: pointer;
+  background-color: #c92a2a;
+  color:#e7f5ff;
+}
+
+.addBtn:hover{
+  background-color: #fa5252;
+}
+
+.watchedMovies{
   display: flex;
-  justify-content: center;
-  padding: 15px;
-  width: 390px;
-  border-radius: 15px;
-  background-color: #343a40;
-  
+}
+
+.watchedMovies img{
+  width: 90px;
+  border-radius: 20px;
+
 }
